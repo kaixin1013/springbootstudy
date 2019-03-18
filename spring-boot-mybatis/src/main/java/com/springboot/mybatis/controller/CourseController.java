@@ -3,17 +3,15 @@ package com.springboot.mybatis.controller;
 
 import com.springboot.mybatis.entity.Course;
 import com.springboot.mybatis.service.CourseService;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import com.springboot.mybatis.util.RandomUtil;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api")
-public class Controller {
+public class CourseController {
     @Resource
     private CourseService courseService;
 
@@ -31,4 +29,27 @@ public class Controller {
     public void deleteCourse(@PathVariable("id") long id){
         courseService.delete(id);
     }
+
+    /**
+     * 新增班课
+     *
+     * @param course
+     */
+    @RequestMapping(value = "/course", method = RequestMethod.POST)
+    public void addCourse(@RequestBody Course course) {
+        course.setCourseCode(RandomUtil.getRandomCode());
+        courseService.insert(course);
+    }
+
+    /**
+     * 更新班课
+     *
+     * @param course
+     */
+    @RequestMapping(value = "/course", method = RequestMethod.PUT)
+    public void updateCourse(@RequestBody Course course) {
+        courseService.update(course);
+    }
 }
+
+
