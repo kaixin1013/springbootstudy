@@ -51,7 +51,7 @@ public class UserServiceImplTest {
 
     @Test
     public void update() {
-        User user = userService.getOne(7L);
+        User user = userService.getOne(12L);
         user.setAvatar("1.jpg");
         userService.update(user);
     }

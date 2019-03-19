@@ -43,10 +43,10 @@ public class CourseServiceImplTest {
     @Test
     public void insert() {
         Course course = new Course();
-        course.setCourseName("微信小程序开发");
+        course.setCourseName("小程序开发");
         course.setCourseClass("软件1721");
-        course.setUserId(1L);
-        course.setCover("1.jpg");
+        course.setUserId(124L);
+        course.setCover("5.jpg");
         course.setCourseCode(RandomUtil.getRandomCode());
         course.setFinished((short) 0);
         courseService.insert(course);
