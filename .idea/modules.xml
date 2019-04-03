@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jianyue-api/jianyue-api.iml" filepath="$PROJECT_DIR$/jianyue-api/jianyue-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../spring-boot-sutdy/quickstart/quickstart.iml" filepath="$PROJECT_DIR$/../spring-boot-sutdy/quickstart/quickstart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../spring-boot-sutdy/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/../spring-boot-sutdy/spring-boot-mybatis/spring-boot-mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/upload/upload.iml" filepath="$PROJECT_DIR$/upload/upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/upload/demo.iml" filepath="$PROJECT_DIR$/upload/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jianyue-api.iml" filepath="$PROJECT_DIR$/jianyue-api.iml" />
     </modules>
   </component>
 </project>

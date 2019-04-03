@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
         <module name="jianyue-api" />
         <module name="quickstart" />
         <module name="spring-boot-mybatis" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="jianyue-api" target="1.8" />
       <module name="quickstart" target="1.8" />
       <module name="quickstart1" target="1.8" />
@@ -22,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
       <module name="jianyue-api" options="-parameters" />
       <module name="quickstart" options="-parameters" />
       <module name="quickstart1" options="-parameters" />
